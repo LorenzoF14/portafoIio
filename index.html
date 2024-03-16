@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio Lorenzo Flores</title>
+</head>
+
+<body>
+    <header>
+            <a href="#" class="logo">Portafolio Lorenzo Flores</a>
+    </header>
+
+    <section id="descripcion" class="background-blue">
+        <div class="center">
+            <h2>Biografia</h2>
+            <img src="https://pbs.twimg.com/profile_images/1657923655366574083/gzPqIzJ3_400x400.jpg" alt="Imagen Descripción">
+                <p>_</p>  
+                <p>Introducción:</p>
+                <p>Soy una persona muy organizada, responsable y con animos de seguir aprendiendo para que mi trabajo siempre sea reconocido y de gran calidad.</p>
+                
+                <p>_</p>
+                <p>Orígenes y Formación:</p>
+                <p>Soy de Tegucigalpa, Honduras, estudié y me formé en Hillcrest School y mis estudios universitarios fueron en la Universidad Catolica de Honduras campus Sagrado Corazón de Jesus.</p>
+                
+                <p>_</p>
+                <p>Intereses y Pasiones:</p>
+                <p>Me interesa mucho la tecnologia y en como nos ayuda dia con dia a facilitarnos la vida, desde pequeño siempre me han gustado las computadoras y todo lo relacionado con ellas, al dia de hoy eso no ha cambiado. Amo los videojuegos y mi pasion es aprender cada vez que puedo algo nuevo sobre tecnologia.</p>
+                
+                <p>_</p>
+                <p>Metas y Aspiraciones:</p>
+                <p>A corto plazo espero ser un ingeniero reconocido en el rubro. A largo plazo espero tener mi propia empresa reconocida en todo el mundo.</p>
+                
+                <p>_</p>
+                <p>Projectos:</p>
+                <p>Pagina web Cladiven, Aplicacion de Facturacion para Salon de Belleza, Aplicacion Movil para Parqueo.</p>
+        </div>
+    </section>
+
+    <section id="formulario" class="background-yellow">
+        <div class="center">
+            <h2>Te gustaria ponerte en contacto conmigo?</h2>
+            <p>Dejame tu informacion para poder contactarte!</p>
+            <form id="signup-form" onsubmit="return validateForm()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Número de teléfono (8 dígitos)" required pattern="[0-9]{8}"
+                    title="Por favor, introduce un número de teléfono válido de 8 dígitos">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="background-gray">
+        <p>&copy; Portafolio de Lorenzo Flores</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
